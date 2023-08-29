@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Hanken Grotesk">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background: papayawhip;
+            font-family: Hanken Grotesk;
+ }
+        .card {
+            background: linear-gradient(hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+            height: 400px;
+            width: 300px;
+            border-radius: 2rem;
+            float: left;
+            
+        }
+        .card p {
+            font-weight: 300;
+            display: flex;
+            margin-top: 40px;
+            font-weight: bold;
+            color: white;
+            font-size: 18px;
+            margin-left: 100px;
+        }
+        .card .circulo {
+            width: 150px;
+            height: 150px;
+            background:linear-gradient(hsla(256, 72%, 46%, 1), hsla(241, 72%, 46%, 0)) ;
+            border-radius: 50%;
+            display: block;
+            margin-left: 70px;
+            margin-top: 5px;
+            position: relative;
+        }
+        .card h1 {
+            margin-left: 48px;
+            margin-top: 20px;
+            position: absolute;
+            align-items: center;
+            font-size: 50px;
+            color: white;
+            display: flex;
+        }
+        .card h2 {
+            display: flex;
+            margin-top: 90px;
+            position: absolute;
+            margin-left: 48px;
+            align-items: center;
+            color: white;
+            font-size:18px ;
+        }
+        .nota h1 {
+            display: block;
+            font-size: 23px;
+            margin-top: -30px;
+            margin-left: 9.5%;
+            position: absolute;
+            font-family: Hanken Grotesk;
+          }
+          
+          .nota p {
+            display: block;
+            margin-top: 200px;
+            position: absolute;
+            align-items: center;
+            justify-content: center;
+            margin-block-end: 1em;
+          }
+          blockquote {
+              display: block;
+              margin-block-start: 3em;
+              margin-block-end: 1em;
+              margin-inline-start: 40px;
+             margin-inline-end: 40px;
+             color: white;
+             font-size: 15px;
+             font-family: Hanken Grotesk;
+        }
+
+        .summary {
+            background: white;
+            width: 300px;
+            height: 400px;
+            float: left;
+            border-radius: 2rem;
+            
+          }
+          .summary h4 {
+            margin: 30px;
+            display: flex;
+            margin-left: 60px;
+            margin-top: 40px;
+            font-weight: bold;
+            font-size: 18px;
+          }
+          .red-box,
+          .yellow-box,
+          .green-box,
+          .blue-box {
+            margin: 0 30px 25px;
+            overflow: hidden;
+            -webkit-border-radius: 20px;
+            border-radius: 10px;
+            height: 40px;
+            display: flex;
+          }
+          .red-box {
+            background-color: #f7f3f3;
+            color: #ee7f7f;
+          }
+¿          .yellow-box {
+            background-color: #fcf9ec;
+            color: #e6bb4f;
+          }
+          .green-box{
+            background-color: #daebe5;
+            color: #66cca5;
+          }
+          .blue-box {
+            background-color: #d6dfe4;
+            color: #376586;
+          }
+          .summary .boton {
+            width: 75%;
+            background: hsl(224, 30%, 27%);
+            border-radius: 30px;
+            color: white;
+            margin: -1px 30px 10px;
+            font-size: 18px;
+            font-family: Hanken Grotesk;
+            cursor: pointer;
+            height: 40px;
+            border: none;
+          }
+          .boton:hover{
+            background: rgb(65, 131, 194);
+          }
+    </style>
+</head>
+<body>
+    <div class="card">
+        <p>Your result</p>
+        <div class="circulo">
+            <h1>76</h1>
+            <h2>of 100</h2>
+        </div>
+        <div class="nota">
+            <h1>Great</h1>
+            <p><blockquote><center>You scored higher than 65% of the people who have taken these test</center> </blockquote></p>
+        </div>
+        
+    </div>
+    <div class="summary">
+        <h4>Summary</h4>
+        <div class="puntaje">
+            <div class="red-box"><span style="color:#ee7f7f;">🩻 Reaction</span><span style="color: black;">&emsp;&emsp;&emsp;&emsp;&emsp;80/100</span></div>
+            <div class="yellow-box"><span style="color:#e6bb4f;">🕛 Memory</span><span style="color: black;">&emsp;&emsp;&emsp;&emsp;&emsp;92/100</span></div>
+            <div class="green-box"><span style="color:#66cca5;">☁️ Verbal</span><span style="color: black;">&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;61/100</span></div>  
+            <div class="blue-box"><span style="color: #376586;">👁️ Visual</span><br><span style="color: black;">&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;72/100</span></div>
+        </div>
+        <input class="boton"  type="submit" value="Continue">
+    </div>
+</body>
+</html>
